@@ -106,6 +106,17 @@ Para instalar o pacote executa os seguintes comando:
 - npm install
 - npm run build (compila os assets, js etc)
 ```
+## Atualizar a Tradução para Prtugues Brasil 
+
+Dentro do arquivo .env altera os seguintes campos:
+```
+APP_LOCALE=pt_br
+APP_FALLBACK_LOCALE=pt_br
+```
+
+## Alterar o Fuso Horario de Africa/Angola
+
+Modificar no arquivo .env o valor da variavel `APP_TIMEZONE` para `Africa/Luanda`
 ____________________________________
 ## About Laravel
 
