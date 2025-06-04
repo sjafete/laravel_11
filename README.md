@@ -120,5 +120,56 @@ Modificar no arquivo .env o valor da variavel `APP_TIMEZONE` para `Africa/Luanda
 
 ## Configuração de Redifinição da Senha
 
+🔹 Passo 1 - Baixar o MailHog
+```
+1. Vá para a página de releases do MailHog:
+👉 https://github.com/mailhog/MailHog/releases
 
+2. Baixe o executável para Windows (ex: MailHog_windows_amd64.exe)
+
+3. Renomeie o arquivo para MailHog.exe (opcional, mas mais simples).
+
+4. Coloque o arquivo em uma pasta acessível, como C:\MailHog.
+```
+
+🔹 Passo 2 - Rodar o MailHog
+```
+1. Abra o Prompt de Comando (ou PowerShell).
+
+2. Navegue até a pasta onde está o MailHog.exe e executa esse programa
+
+O MailHog agora estará escutando:
+
+SMTP na porta 1025
+
+Interface web em: http://localhost:8025
+
+```
+
+🔹 Passo 3: Configurar sua aplicação
+Configure o host SMTP para:
+```
+Host: localhost
+
+Porta: 1025
+
+Exemplo (Laravel – .env):
+env
+Copiar
+Editar
+MAIL_MAILER=smtp
+MAIL_HOST=localhost
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="no-reply@twdangola.com"
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+🔹 Passo 4: Ver os e-mails
+Abra no navegador:
+👉 http://localhost:8025
+
+Você verá a interface do MailHog com os e-mails capturados.
 ____________________________________
