@@ -4,7 +4,7 @@ Para utilizar este código, faça o clone utilizando o Git. Para isso, execute o
 
 
 ```
-git clone https://github.com/gordindeoculos/laravel11.git
+git clone https://github.com/sjafete/laravel_11.git
 
 ```
 
