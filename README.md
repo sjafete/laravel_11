@@ -120,5 +120,25 @@ Modificar no arquivo .env o valor da variavel `APP_TIMEZONE` para `Africa/Luanda
 
 ## Configuração de Redifinição da Senha
 
+### Testar a Redefinição de Senha com o **MailHog**
 
+1. Execute o **MailHog** e acesse `http://localhost:8025`.
+
+2. Acesse a pasta do projeto e execute o servidor web embutido do Laravel:
+
+```bash
+php arisan serve
+```
+
+3. Acesse `http://localhost:8000` e faça o cadastro de um usuário clicando no link **Cadastrar** ou **Register**.
+
+4. Já com um usuário cadastrado, clique no link para fazer o `Login`, no ***formulário de login*** clique no link `Esqueceu sua senha?`, no ***formulário de solicitação de redefinição de senha***, preencha com o e-mail de um usuário já cadastrado e clique no botão `Enviar Link de Redefinição de Senha`.
+
+5. No **MailHog** acesse a **Caixa de Entrada (Inbox)** e irá ver o e-mail com o assunto **Reset Password Notification**, abra essa mensagem e no botão **Reset Password**, você será redirecionado para o formulário **Redefinir Senha**, altere sua senha e faça o login utilizando a nova senha.
+
+Através deste teste é possível verificar que a **Redefinição de Senha** está ativa e funcionando. Para configurar um e-mail real, será necessário alterar as configurações das variáveis de ambiente `MAIL_*` do `DotEnv (arquivo .env)` de acordo com servidor de e-mail que contratar.
+
+### Personalizar a notificação de Redefinição de Senha
+
+Neste tópico iremos verificar como personalizar a mensagem (notificação) enviada por e-mail ao usuário quando solicitado a redefinição de senha.
 ____________________________________
