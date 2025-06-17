@@ -196,4 +196,13 @@ Através deste teste é possível verificar que a **Redefinição de Senha** est
 
 Neste tópico iremos verificar como personalizar a mensagem (notificação) enviada por e-mail ao usuário quando solicitado a redefinição de senha.
 >>>>>>> 0437bc3099e6ca6b2d1cc1fae3d5f39abae7464e
+
+## Pré Requisitos
+
+Para utilizar este codigo, faça o clone no Git, executa o seguinte comando:
+
+```
+git clone 
+
+```
 ____________________________________
