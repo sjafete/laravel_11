@@ -202,7 +202,31 @@ Neste tópico iremos verificar como personalizar a mensagem (notificação) envi
 Para utilizar este codigo, faça o clone no Git, executa o seguinte comando:
 
 ```
-git clone 
+git clone https://github.com/gordindeoculos/laravel11
 
+```
+## 1. Instalar as dependecias listadas no arquivo `composer.json`: **
+
+```
+composer install
+```
+
+## 2. Instalar as dependecias listadas no arquivo `package.json`: **
+
+```
+npm install
+npm run build
+```
+
+## 3. Copiar o arquivo de ambiente `.env`: **
+
+```
+copy env.exemple1 .env
+```
+
+## 4. Gerar uma nova chave de aplicativo: **
+
+```
+php artisan key:generate
 ```
 ____________________________________
