@@ -229,4 +229,10 @@ copy env.exemple1 .env
 ```
 php artisan key:generate
 ```
+
+## 4. Criar Bando de Dados Migrate: **
+
+```
+php artisan migrate
+```
 ____________________________________
