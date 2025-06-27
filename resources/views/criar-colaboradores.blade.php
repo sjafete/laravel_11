@@ -21,8 +21,14 @@
         <h1>Cadastrar</h1>
         <h1>Formulario de Cadastro de Colaboradores</h1>
 
-        <form action="#" method="POST">
+        <form action="{{ route('colaborador-store') }}" method="POST">
+            @csrf
             <div class="cardbox_form">
+                @if (session('massage'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+                @endif
                 <label for="nome">Nome:</label>
                 <br>
                 <input type="text" name="nome" id="nome">
@@ -33,7 +39,7 @@
                 <br>
                 <label for="telefone">Telefone:</label>
                 <br>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="telefone" id="telefone">
                 <br>
                 <label for="endereco">Endereço:</label>
                 <br>

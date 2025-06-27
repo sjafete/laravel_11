@@ -14,8 +14,11 @@ class Colaborador extends Model
         'email',
         'telefone',
         'endereco',
-        'munifipio',
+        'municipio',
         'cargo',
         'numero'
     ];
+
+    protected $table = "colaboradores";
+
 }

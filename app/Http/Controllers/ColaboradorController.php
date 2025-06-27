@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Colaborador;
 
-class NomeController extends Controller
+class ColaboradorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -33,7 +33,7 @@ class NomeController extends Controller
 
         Colaborador::create($data);
 
-        return redirect()->back()->with('mesage', 'Registro incluido com sucesso!');
+        return redirect()->back()->with('message', 'Registro incluido com sucesso!');
 
     }
 
