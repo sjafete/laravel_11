@@ -241,9 +241,26 @@ enter password:
 use nome_DB;
 ```
 ```
-create nome_DB
+create nome_DB;
 ```
 ```
 show table;
 ```
+
+## 4. Criado Model e Controller no Laravel: **
+
+# Comando para criar Model
+```
+php artisan make:model NomeDoModel
+
+```
+Exemplo: php artisan make:model Produto
+
+
+# Comando para criar Controller:
+```
+php artisan make:controller NomeDoController
+
+```
+Exemplo: php artisan make:controller ProdutoController
 ____________________________________
