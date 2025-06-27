@@ -249,7 +249,7 @@ show table;
 
 ## 4. Criado Model e Controller no Laravel: **
 
-# Comando para criar Model
+### Comando para criar Model
 ```
 php artisan make:model NomeDoModel
 
@@ -257,7 +257,7 @@ php artisan make:model NomeDoModel
 Exemplo: php artisan make:model Produto
 
 
-# Comando para criar Controller:
+### Comando para criar Controller
 ```
 php artisan make:controller NomeDoController
 
