@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email')->unique();
+            $table->string('cargo');
             $table->string('telefone');
             $table->string('Endereco');
-            $table->integer ('numero');
+            $table->string('provincia');
             $table->string('municipio');
-            $table->string('provincia', 2);
-            $table->string('cargo');
+            $table->integer('numero');
             $table->timestamps();
         });
     }

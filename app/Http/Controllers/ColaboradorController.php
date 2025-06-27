@@ -33,7 +33,7 @@ class ColaboradorController extends Controller
 
         Colaborador::create($data);
 
-        return redirect()->back()->with('message', 'Registro incluido com sucesso!');
+        return redirect()->back()->with('mensagem', 'Registro incluido com sucesso!');
 
     }
 

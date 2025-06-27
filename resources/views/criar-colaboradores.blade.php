@@ -24,10 +24,10 @@
         <form action="{{ route('colaborador-store') }}" method="POST">
             @csrf
             <div class="cardbox_form">
-                @if (session('massage'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
+                @if (session('mensagem'))
+                    <div class="alert alert-success">
+                        {{ session('mensagem') }}
+                    </div>
                 @endif
                 <label for="nome">Nome:</label>
                 <br>
@@ -49,6 +49,10 @@
                 <br>
                 <input type="text" name="cargo" id="cargo">
                 <br>
+                <label for="provincia">Provincia:</label>
+                <br>
+                <input type="text" name="provincia" id="provincia">
+                                <br>
                 <label for="municipio">Municipio:</label>
                 <br>
                 <input type="text" name="municipio" id="municipio">

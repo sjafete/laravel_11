@@ -12,11 +12,12 @@ class Colaborador extends Model
     protected $fillable = [
         'nome',
         'email',
+        'cargo',
         'telefone',
         'endereco',
+        'provincia',
         'municipio',
-        'cargo',
-        'numero'
+        'numero',
     ];
 
     protected $table = "colaboradores";
