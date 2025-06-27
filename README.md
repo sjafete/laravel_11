@@ -230,9 +230,20 @@ copy env.exemple1 .env
 php artisan key:generate
 ```
 
-## 4. Criar Bando de Dados Migrate: **
+## 4. Criar Bando de Dados MYSQL: **
 
 ```
-php artisan migrate
+mysql -u root -p
+```
+enter password:
+
+```
+use nome_DB;
+```
+```
+create nome_DB
+```
+```
+show table;
 ```
 ____________________________________
